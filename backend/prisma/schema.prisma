@@ -1,0 +1,68 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
+}
+
+
+
+enum Status {
+active
+inactive
+}
+
+model Employee {
+  id               Int      @id @default(autoincrement())
+  name             String   
+  email            String
+  address          String
+  phone            String
+  cpf              String 
+  image            String  @db.LongText
+  birth_date       DateTime
+  status           Status
+
+  branch           Branch? @relation(fields: [branchID], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  branchID         Int 
+
+
+  role              Role? @relation(fields: [roleID], references: [id], onDelete: Cascade,onUpdate: Cascade)
+  roleID            Int      
+
+  department        Department? @relation(fields: [departmentID], references: [id], onDelete: Cascade , onUpdate: Cascade)
+  departmentID      Int      
+
+}
+
+model Branch {
+  id               Int  @id @default(autoincrement())
+  name             String
+  address          String
+  email            String
+  city             String
+  state            String
+  phone            String
+
+  employee         Employee[] 
+
+}
+
+model Role {
+  id                Int  @id @default(autoincrement())
+  name              String  
+
+  employee        Employee[] 
+}
+
+model Department {
+  id                Int  @id @default(autoincrement())
+  name              String  
+
+  employee        Employee[] 
+}
+
+
