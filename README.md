@@ -3,7 +3,7 @@
 
 Project: It is a project about company management. It is possible to manage, sucha s add, delete, update and search, a small company. It's manageable employees, branchs, roles and department of the company. The frontend is all made using Reactjs with Hooks, such as ContextApi, Typescript and styling with tailwindCss. The backend is using Apollo Graphql and Typescript.
 
-Deploy: <a href="https://management-xi.vercel.app/">Visit W3Schools.com!</a>
+Deploy: <a href="https://management-xi.vercel.app/">Visit the Project here</a>
 
 - 👨‍💻 All of my projects are available at [https://github.com/brunogesteves](https://github.com/brunogesteves)
 
