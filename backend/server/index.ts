@@ -6,7 +6,6 @@ import { EmployeeListResolver } from './Resolvers/Employee-Resolver';
 import { BranchListResolver } from './Resolvers/Branch-Resolver';
 import { DepartmentListResolver } from './Resolvers/Department-Resolver';
 import { RoleListResolver } from './Resolvers/Role-Resolver';
-import { UploadResolver } from './Resolvers/Pictures-Resolver';
 
 const main = async () => {
   const typeDefs = `
@@ -18,7 +17,6 @@ const main = async () => {
       BranchListResolver,
       DepartmentListResolver,
       RoleListResolver,
-      UploadResolver,
     ],
   });
 

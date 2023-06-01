@@ -25,7 +25,6 @@ export class EmployeeListResolver {
 
   @Mutation(() => Boolean)
   async addUpdateEmployee(@Arg('data') data: CreateUpdateEmployeeInput) {
-    console.log(data);
     const { id, ...dataInfo } = data;
 
     try {

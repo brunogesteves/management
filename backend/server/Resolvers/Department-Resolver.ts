@@ -26,7 +26,6 @@ export class DepartmentListResolver {
   @Mutation(() => Boolean)
   async deleteDepartment(@Arg('data') data: DeleteDepartmentInput) {
     const { id } = data;
-    console.log('deleteDepartment: ', data.id);
 
     try {
       let isDepartmentDeleted = await prisma.department.delete({
