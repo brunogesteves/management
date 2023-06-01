@@ -1,7 +1,9 @@
 <h1 align="center">Hi 👋, I'm Bruno Esteves</h1>
 <h3 align="center">A Junior frontend developer from Brazil</h3>
 
-- 🔭 I’m currently working on **management employees**
+Project: It is a project about company management. It is possible to manage, sucha s add, delete, update and search, a small company. It's manageable employees, branchs, roles and department of the company. The frontend is all made using Reactjs with Hooks, such as ContextApi, Typescript and styling with tailwindCss. The backend is using Apollo Graphql and Typescript.
+
+Deploy: <a href="https://management-xi.vercel.app/">Visit W3Schools.com!</a>
 
 - 👨‍💻 All of my projects are available at [https://github.com/brunogesteves](https://github.com/brunogesteves)
 
