@@ -87,7 +87,7 @@ export const Content: React.FC = () => {
       </ul>
       <div>
         <div
-          className=" bg-white hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block elevation-15 rounded-lg overflow-x-hidden"
+          className=" bg-white hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block elevation-15 rounded-lg overflow-x-hidden "
           id="tabs-employee"
           role="tabpanel"
           aria-labelledby="tabs-employee-tab"
